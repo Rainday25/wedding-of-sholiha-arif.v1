@@ -17,10 +17,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/download.jpeg);
+    background-image: url(img/bg-prewed.jpg);
     background-size: cover;
     background-position: center;
     z-index: -1;
+    filter: grayscale();
 }
 
 .hero {
@@ -76,12 +77,13 @@ body {
 }
 
 .Home {
-    background-image: url(img/images.jpeg);
+    background-image: url(img/bg-home-1.jpg);
     background-size: cover;
     min-height: 100vh;
     margin-top: -6rem;
     padding-top: 15rem;
     padding-bottom: 5rem;
+    z-index: -1;
 }
 
 .Home h2, .info h2, .story h2, .galery h2, .rsvp h2, .gifts h2 {
@@ -111,8 +113,13 @@ body {
     color: var(--pink);
 }
 
+.Home .couple p {
+    color: #0a0a0a;
+}
+
 .Home .couple img {
     width: 100%;
+    border-radius: 50%;
 }
 
 .Home .heart {
@@ -173,6 +180,32 @@ body {
 .story, .galery, .rsvp, .gifts {
     padding-top: 10rem;
     padding-bottom: 8rem;
+}
+
+.story h2 {
+    font-size: 25px;
+}
+
+.arabic {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px;
+    direction: rtl;
+    font-size: 20px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.tranlation {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px;
+    font-size: 15px;
+    color: #555;
+    margin: 10px 0;
+    direction: ltr;
 }
 
 .story span, .galery span, .gifts span {
@@ -318,6 +351,10 @@ body {
     border: 1px solid white;
 }
 
+.gifts h2 {
+    font-size: 40px;
+}
+
 footer {
     padding: 3rem;
     background-color: var(--pink);
@@ -449,7 +486,7 @@ footer li {
 
 
 /* Mobile Phone */
-@media (max-width: px) {
+@media (max-width: 576px) {
     html {
         font-size: 60%;
     }
